@@ -17,7 +17,7 @@ pushd "$(dirname "$0")" &>/dev/null || exit 1
 mkdir -p xml
 
 fetch repository2-1.xml xml/repository2-1.xml
-for img in android android-tv android-wear android-wear-cn android-automotive google_apis google_apis_playstore
+for img in android android-tv android-wear android-wear-cn android-automotive google-tv google_apis google_apis_playstore
 do
     fetch sys-img/$img/sys-img2-1.xml xml/$img-sys-img2-1.xml
 done
